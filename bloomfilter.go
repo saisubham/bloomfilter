@@ -61,9 +61,8 @@ func main() {
 			words = append(words, w)
 			bf |= mask
 		} else {
-			fmt.Println(w, "may already be present")
+			fmt.Printf("%q may already be present\n", w)
 		}
-		fmt.Println(words)
-		fmt.Printf("%b\n%b\n", mask, bf)
+		fmt.Printf("%v\n\n", words)
 	}
 }
