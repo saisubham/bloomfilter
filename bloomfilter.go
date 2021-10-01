@@ -30,15 +30,6 @@ func h3(word string) int {
 	return h
 }
 
-func CountSetBits(n int) int {
-	count := 0
-	for n != 0 {
-		count += n & 1
-		n >>= 1
-	}
-	return count
-}
-
 func main() {
 	var w string
 	words := []string{}
